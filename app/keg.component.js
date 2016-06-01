@@ -21,11 +21,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
             KegComponent = (function () {
                 function KegComponent() {
                 }
+                KegComponent.prototype.drink = function () {
+                    this.keg.pints -= 1;
+                };
                 KegComponent = __decorate([
                     core_1.Component({
                         selector: 'keg-display',
                         inputs: ['keg'],
-                        template: "\n    <h3>{{ keg.description }}</h3>\n  "
+                        template: "\n    <div class=\"row\"><h3><span class=\"col-sm-2\">{{ keg.name }}</span> <span class=\"col-sm-2\">{{ keg.brand }}</span> <span class=\"col-sm-2\">{{ keg.price }}</span> <span class=\"col-sm-2\">{{ keg.ABV }}</span> <span class=\"col-sm-2\">{{ keg.pints }}</span></h3><button (click)=\"drink()\" class=\"btn btn-small\">Drink</button></div>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], KegComponent);

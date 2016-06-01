@@ -1,4 +1,4 @@
-System.register(['angular2/core', './keg.component'], function(exports_1, context_1) {
+System.register(['angular2/core', './keg.component', './edit-keg-details.component', './new-keg.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', './keg.component'], function(exports_1, contex
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, keg_component_1;
+    var core_1, keg_component_1, edit_keg_details_component_1, new_keg_component_1;
     var KegListComponent;
     return {
         setters:[
@@ -19,6 +19,12 @@ System.register(['angular2/core', './keg.component'], function(exports_1, contex
             },
             function (keg_component_1_1) {
                 keg_component_1 = keg_component_1_1;
+            },
+            function (edit_keg_details_component_1_1) {
+                edit_keg_details_component_1 = edit_keg_details_component_1_1;
+            },
+            function (new_keg_component_1_1) {
+                new_keg_component_1 = new_keg_component_1_1;
             }],
         execute: function() {
             KegListComponent = (function () {
@@ -29,12 +35,15 @@ System.register(['angular2/core', './keg.component'], function(exports_1, contex
                     console.log('child', clickedKeg);
                     this.onKegSelect.emit(clickedKeg);
                 };
+                KegListComponent.prototype.createKeg = function (newKeg) {
+                    this.kegList.push(newKeg);
+                };
                 KegListComponent = __decorate([
                     core_1.Component({
                         selector: 'keg-list',
                         inputs: ['kegList'],
                         outputs: ['onKegSelect'],
-                        directives: [keg_component_1.KegComponent],
+                        directives: [keg_component_1.KegComponent, edit_keg_details_component_1.EditKegDetailsComponent, new_keg_component_1.NewKegComponent],
                         templateUrl: 'app/keg-list.component.html'
                     }), 
                     __metadata('design:paramtypes', [])
