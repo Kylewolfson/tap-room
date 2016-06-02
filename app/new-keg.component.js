@@ -42,7 +42,7 @@ System.register(['angular2/core', './keg.model'], function(exports_1, context_1)
                         selector: 'new-keg',
                         inputs: ['kegList'],
                         outputs: ['onSubmitNewKeg'],
-                        template: "\n    <div class=\"keg-form\">\n      <h3>Tap Keg:</h3>\n      <input placeholder=\"Name\" class=\"col-sm-8 input-lg\" #newName>\n      <input placeholder=\"Brand\" class=\"col-sm-8 input-lg\" #newBrand>\n      <input placeholder=\"Price\" class=\"col-sm-8 input-lg\" #newPrice>\n      <input placeholder=\"ABV\" class=\"col-sm-8 input-lg\" #newABV>\n      <button (click)=\"addKeg(newName, newBrand, newPrice, newABV)\" class=\"btn-success btn-lg add-button\">Add</button>\n    </div>\n    "
+                        template: "\n    <div class=\"keg-form\">\n      <h3>Tap Keg:</h3>\n      <input placeholder=\"Name\" class=\"col-sm-8 input-lg\" required #newName>\n      <input placeholder=\"Brand\" class=\"col-sm-8 input-lg\" #newBrand>\n      <input placeholder=\"Price\" class=\"col-sm-8 input-lg\" #newPrice>\n      <input placeholder=\"ABV\" class=\"col-sm-8 input-lg\" #newABV>\n      <button (click)=\"addKeg(newName, newBrand, newPrice, newABV)\" class=\"btn-success btn-lg add-button\">Add</button>\n    </div>\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], NewKegComponent);

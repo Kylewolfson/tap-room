@@ -24,6 +24,7 @@ export class AppComponent {
       new Keg("Piss", "Coors", 2, 3, 2),
       new Keg("Blue Ribbon", "Pabst", 1.50, 3.5, 3)
     ];
+    this.kegs[0].pints = 10;
   }
   kegWasSelected(clickedKeg: Keg): void {
     console.log(clickedKeg);

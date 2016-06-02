@@ -1,5 +1,9 @@
 <div class="row"><h2><span class="col-sm-2">Name</span> <span class="col-sm-2">Brand</span> <span class="col-sm-2">Price</span> <span class="col-sm-2">ABV</span> <span class="col-sm-2">Pints</span></h2></div>
-<keg-display *ngFor="#currentKeg of kegList"
+<select (change)="onChange($event.target.value)">
+  <option value="all">Show All</option>
+  <option value="low">Show Low Kegs</option>
+</select>
+<keg-display *ngFor="#currentKeg of kegList | lowPints:filterPints"
 (click)="kegClicked(currentKeg)"
 [class.selected]="currentKeg === selectedKeg"
 [keg]="currentKeg">

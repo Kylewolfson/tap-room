@@ -10,7 +10,7 @@ import { AppComponent } from './app.component';
   template: `
     <div class="keg-form">
       <h3>Tap Keg:</h3>
-      <input placeholder="Name" class="col-sm-8 input-lg" #newName>
+      <input placeholder="Name" class="col-sm-8 input-lg" required #newName>
       <input placeholder="Brand" class="col-sm-8 input-lg" #newBrand>
       <input placeholder="Price" class="col-sm-8 input-lg" #newPrice>
       <input placeholder="ABV" class="col-sm-8 input-lg" #newABV>

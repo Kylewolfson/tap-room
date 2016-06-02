@@ -42,5 +42,13 @@
     "typings": "^0.6.8",
     "lite-server": "^2.1.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kylewolfson/tap-room.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kylewolfson/tap-room/issues"
+  },
+  "homepage": "https://github.com/Kylewolfson/tap-room#readme",
   "description": ""
 }

@@ -32,6 +32,7 @@ System.register(['angular2/core', './keg-list.component', './keg.model'], functi
                         new keg_model_1.Keg("Piss", "Coors", 2, 3, 2),
                         new keg_model_1.Keg("Blue Ribbon", "Pabst", 1.50, 3.5, 3)
                     ];
+                    this.kegs[0].pints = 10;
                 }
                 AppComponent.prototype.kegWasSelected = function (clickedKeg) {
                     console.log(clickedKeg);
