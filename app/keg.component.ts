@@ -6,7 +6,7 @@ import { Keg } from './keg.model.ts';
     selector: 'keg-display',
     inputs: ['keg'],
   template: `
-    <div class="row"><h3><span class="col-sm-2">{{ keg.name }}</span> <span class="col-sm-2">{{ keg.brand }}</span> <span class="col-sm-2">{{ keg.price }}</span> <span class="col-sm-2">{{ keg.ABV }}</span> <span class="col-sm-2">{{ keg.pints }}</span></h3><button (click)="drink()" class="btn btn-small">Drink</button></div>
+    <div class="row"><h3><span class="col-sm-2">{{ keg.name }}</span> <span class="col-sm-2">{{ keg.brand }}</span> <span class="col-sm-2">{{ keg.price }}</span> <span class="col-sm-2">{{ keg.ABV }}</span> <span class="col-sm-2">{{ keg.pints }}</span></h3><button (click)="drink()" class="btn btn-small">Pour!</button></div>
   `
 })
 

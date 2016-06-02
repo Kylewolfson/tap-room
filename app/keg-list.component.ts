@@ -27,9 +27,10 @@ export class KegListComponent {
   }
   createKeg(newKeg: Keg): void {
     if (newKeg.name && newKeg.brand && newKeg.ABV && newKeg.price){
-    this.kegList.push(
-      newKeg
-    );}
+      this.kegList.push(
+        newKeg
+      );
+    }
   }
   onChange(filterOption) {
     this.filterPints = filterOption;

@@ -28,7 +28,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'keg-display',
                         inputs: ['keg'],
-                        template: "\n    <div class=\"row\"><h3><span class=\"col-sm-2\">{{ keg.name }}</span> <span class=\"col-sm-2\">{{ keg.brand }}</span> <span class=\"col-sm-2\">{{ keg.price }}</span> <span class=\"col-sm-2\">{{ keg.ABV }}</span> <span class=\"col-sm-2\">{{ keg.pints }}</span></h3><button (click)=\"drink()\" class=\"btn btn-small\">Drink</button></div>\n  "
+                        template: "\n    <div class=\"row\"><h3><span class=\"col-sm-2\">{{ keg.name }}</span> <span class=\"col-sm-2\">{{ keg.brand }}</span> <span class=\"col-sm-2\">{{ keg.price }}</span> <span class=\"col-sm-2\">{{ keg.ABV }}</span> <span class=\"col-sm-2\">{{ keg.pints }}</span></h3><button (click)=\"drink()\" class=\"btn btn-small\">Pour!</button></div>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], KegComponent);

@@ -13,3 +13,9 @@
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.boozy {
+  font-style: italic;
+}
+.spendy {
+  color: red;
+}

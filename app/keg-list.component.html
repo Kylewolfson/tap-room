@@ -6,6 +6,8 @@
 <keg-display *ngFor="#currentKeg of kegList | lowPints:filterPints"
 (click)="kegClicked(currentKeg)"
 [class.selected]="currentKeg === selectedKeg"
+[class.boozy]="currentKeg.ABV > 6"
+[class.spendy]="currentKeg.price > 5"
 [keg]="currentKeg">
 </keg-display>
 <edit-keg-details *ngIf="selectedKeg" [keg]="selectedKeg">
