@@ -36,7 +36,7 @@ System.register(['angular2/core', './keg.component', './edit-keg-details.compone
                     this.onKegSelect = new core_1.EventEmitter();
                 }
                 KegListComponent.prototype.kegClicked = function (clickedKeg) {
-                    console.log('child', clickedKeg);
+                    this.selectedKeg = clickedKeg;
                     this.onKegSelect.emit(clickedKeg);
                 };
                 KegListComponent.prototype.createKeg = function (newKeg) {
@@ -46,7 +46,6 @@ System.register(['angular2/core', './keg.component', './edit-keg-details.compone
                 };
                 KegListComponent.prototype.onChange = function (filterOption) {
                     this.filterPints = filterOption;
-                    console.log(this.filterPints);
                 };
                 KegListComponent = __decorate([
                     core_1.Component({

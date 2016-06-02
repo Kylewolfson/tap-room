@@ -25,7 +25,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Component({
                         selector: 'edit-keg-details',
                         inputs: ['keg'],
-                        template: "\n      <div class=\"keg-form\">\n        <h3>Edit Name: {{ keg.name }}</h3>\n        <input [(ngModel)]=\"keg.name\" class=\"col-sm-8 input-lg keg-form\"/>\n      </div>\n  "
+                        template: "\n      <div class=\"keg-form\">\n        <h3>Edit Name:</h3>\n        <input [(ngModel)]=\"keg.name\" class=\"input-lg\"/>\n        <h3>Edit Brand: </h3>\n        <input [(ngModel)]=\"keg.brand\" class=\"input-lg\"/>\n        <h3>Edit Price: </h3>\n        <input [(ngModel)]=\"keg.price\" class=\"input-lg\"/>\n        <h3>Edit ABV: </h3>\n        <input [(ngModel)]=\"keg.ABV\" class=\"input-lg\"/>\n      </div>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], EditKegDetailsComponent);
